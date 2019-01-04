@@ -8,14 +8,14 @@ const ToDoList = ({todos}) => {
         const { id, ...itemProps } = item;
 
         return (
-            <li key={ id }>
+            <li className="list-group-item" key={ id }>
                 <ToDoListItem { ...itemProps }/>
             </li>
         )
     })
 
     return (
-        <ul>
+        <ul className="list-group">
             { elements }
         </ul>
 
